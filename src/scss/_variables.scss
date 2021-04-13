@@ -1,0 +1,26 @@
+// Colors
+$lblack: hsl(238, 29%, 16%);
+$orange: hsl(14, 88%, 65%);
+$violet: hsl(273, 75%, 66%);
+$blue: hsl(240, 73%, 65%);
+$gray: hsl(237, 12%, 33%);
+$dblack: hsl(240, 6%, 50%);
+$creme: hsl(240, 5%, 91%);
+
+// Fonts
+$font-primary: 'Kumbh Sans', sans-serif;
+
+// Media Queries
+$breakpoints: (
+  medium: 700px,
+  large: 1000px,
+  xlarge: 1300px
+);
+
+@mixin breakpoint($size) {
+  $breakpoint-value: map-get($breakpoints, $size);
+
+  @media screen and (min-width: $breakpoint-value) {
+    @content;
+  }
+}

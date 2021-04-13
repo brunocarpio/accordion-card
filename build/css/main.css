@@ -1,0 +1,127 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+body {
+  font: 400 0.75rem "Kumbh Sans", sans-serif;
+  color: #4a4b5e;
+  background-image: linear-gradient(#af67e9, #6565e7);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #1d1e35;
+}
+
+.wrapper {
+  margin: 148px 22px;
+  padding: 0;
+}
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    margin: 130px 230px;
+    padding: 0;
+  }
+}
+
+.faq {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 30px 40px rgba(29, 30, 53, 0.5);
+}
+.faq__box-desktop {
+  display: none;
+  position: absolute;
+  left: 137px;
+  top: 330px;
+  z-index: 1;
+}
+.faq__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+  width: 328px;
+  height: 540px;
+  padding-top: 138px;
+  background-image: url(../img/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 34px -4px;
+}
+.faq__content h1 {
+  text-align: center;
+}
+.faq__text {
+  width: 283px;
+}
+.faq__woman-desktop {
+  display: none;
+  position: relative;
+  right: 85px;
+}
+.faq__woman-mobile {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+.faq details {
+  border-bottom: 2px solid #e7e7e9;
+  padding: 20px 0px;
+  line-height: 1.5;
+}
+.faq details[open] summary {
+  font-weight: 700;
+}
+.faq details summary {
+  list-style: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+.faq details summary:hover {
+  color: #f47c57;
+}
+.faq details summary:after {
+  content: url(../img/icon-arrow-down.svg);
+  position: absolute;
+  right: 10px;
+}
+.faq details p {
+  margin: 18px 0 0 0;
+  color: #4a4b5e;
+}
+@media screen and (min-width: 1000px) {
+  .faq__content {
+    width: 920px;
+    height: 510px;
+    padding-top: 0;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(../img/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -560px -282px;
+  }
+  .faq__content h1 {
+    text-align: left;
+  }
+  .faq__woman-desktop, .faq__box-desktop {
+    display: block;
+  }
+  .faq__woman-mobile {
+    display: none;
+  }
+  .faq__text {
+    width: 350px;
+  }
+}
